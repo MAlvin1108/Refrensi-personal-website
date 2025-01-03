@@ -1,0 +1,93 @@
+<html lang="en">
+    <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-Hunter</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Faculty+Glyphic&family=Quicksand:wght@300..700&family=Uchen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="title">Profile Hunter</h1>
+        <nav>
+            <a href="https://id.wikipedia.org/wiki/Hunter_%C3%97_Hunter" class="nav-link" style="color: white; text-decoration: none; margin-right: 20px;">History</a>
+            <form style="display: inline;">
+                <input id="search-input" class="inputsearch" type="text" placeholder="Search...">
+                <button type="button" id="search-button">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <aside class="sidebar">
+            <img src="img\background\sidebar-logo.jpg" alt="Sidebar Illustration" class="sidebar-img" width="50px" height="50px">
+            <h2>Character Categories</h2>
+            <ul>
+                <li id="protagonists">Protagonists</li>
+                <li id="antagonists">Antagonists</li>
+                <li id="supporting">Supporting Characters</li>
+            </ul>
+        </aside>
+
+        <!-- Daftar karakter -->
+        <article class="profile">
+            <ul id="character-list">
+                <li data-name="Gon Freecs" data-dob="May 5" data-age="12" data-status="hunter" data-category="protagonist">
+                    <img src="img/chara/gon.jpg" alt="Gon Freecs">
+                    <a>Gon Freecs</a>
+                </li>
+                <li data-name="Killua Zoldyck" data-dob="July 7" data-age="12" data-status="hunter" data-category="supporting">
+                    <img src=" /chara/killua.jpg" alt="Killua Zoldyck">
+                    <a>Killua Zoldyck</a>
+                </li>
+                <li data-name="Kurta Kurapika" data-dob="April 4" data-age="17" data-status="hunter" data-category="supporting">
+                    <img src="img/chara/kurapika.jpg" alt="Kurapika">
+                    <a>Kurta Kurapika</a>
+                </li>
+                <li data-name="Leorio Paradinight" data-dob="March 3" data-age="19" data-status="hunter" data-category="supporting">
+                    <img src="img/chara/leorio.jpg" alt="Leorio">
+                    <a>Leorio Paradinight</a>
+                </li>
+                <li data-name="Isaac Netero" data-dob="December 10" data-age="110" data-status="hunter" data-category="supporting">
+                    <img src="img/chara/isaac.jpg" alt="Isaac Netero">
+                    <a>Isaac Netero</a>
+                </li>
+                <li data-name="Ging Freecs" data-dob="October 10" data-age="35" data-status="hunter" data-category="supporting">
+                    <img src="img/chara/ging.jpg" alt="Ging Freecs">
+                    <a>Ging Freecs</a>
+                </li>
+                <li data-name="Hisoka Morrow" data-dob="June 6" data-age="28" data-status="hunter" data-category="antagonist">
+                    <img src="img/chara/hisoka.jpg" alt="Hisoka">
+                    <a>Hisoka Morrow</a>
+                </li>
+                <li data-name="Illumi Zoldyck" data-dob="November 11" data-age="24" data-status="hunter" data-category="antagonist">
+                    <img src="img/chara/illumi zoldyck.jpg" alt="Illumi">
+                    <a>Illumi Zoldyck</a>
+                </li>
+                <li data-name="Biscuit Kruger" data-dob="February 2" data-age="57" data-status="hunter" data-category="supporting">
+                    <img src="img/chara/biskuit.jpg" alt="Biscuit">
+                    <a>Biscuit Kruger</a>
+                </li>
+                <li data-name="Chrollo Lucifer" data-dob="April 15" data-age="26" data-status="ex-hunter" data-category="antagonist">
+                    <img src="img/chara/chrollo.jpg" alt="Chrollo">
+                    <a>Chrollo Lucifer</a>
+                </li>
+            </ul>
+            <script src="listprofile.js"></script>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Profile Hunter. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
